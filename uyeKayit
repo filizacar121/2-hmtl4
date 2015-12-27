@@ -1,7 +1,6 @@
 <html>
-<head>
-	<meta charset="utf-8" />
-	<title>girisFormu</title>
+<head><meta charset="utf-8" />
+	<title>uyeKayitFormu</title>
 	<style>
 		body {
 			padding: 50px 100px;
@@ -47,29 +46,55 @@
 			-moz-border-radius: 3px;
 			-webkit-border-radius: 3px;		
 		}
-	</style>
-</head>
+	</style></head>
+
 <body>
+	<h2>Uye Kayıt Formu</h2>
+	
 	<form class="form">
 		<fieldset>
-<legend>Giriş</legend>
+<legend>Kişisel Bilgiler</legend>
 
+        <p class="kullaniciAdi">
+			<input type="text" name="kullaniciAdi" id="kullaniciAdi" />
+			<label for="kullaniciAdi">Kulanıcı Adı</label>
+		</p>
 		<p class="name">
 			<input type="text" name="name" id="name" />
-			<label for="name">Kullanıcı Adı veya e-mail</label>
+			<label for="name">İsim</label>
 		</p>
-		
+		<p class="surname">
+			<input type="text" name="surname" id="surname" />
+			<label for="surname">Soyisim</label>
+		</p>
 		<p class="sifre">
 			<input type="text" name="sifre" id="sifre" />
 			<label for="sifre">Şifre</label>
 		</p>
-		<p class="submit">
-			<input type="submit" value="Giriş" />
+		<p class="sifretekrar">
+			<input type="text" name="sifretekrar" id="sifre" />
+			<label for="sifretekrar">Şifre Tekrar</label>
 		</p>
-		<p>
-		<a href="sifreGonderme.html">Sifremi Unuttum</a>
-		<p><a href="uyeKayit.html">ÜyeOl</a></p>
-		
-</p>
+		<p class="email">
+			<input type="text" name="email" id="email"  />
+			<label for="email">Email</label>
+		</p>
+			
+		<p class="adres">
+			<label for="adres">Adres</label>
+			<textarea name="text" /></textarea>
+		</p>
+		<p class="cinsiyet">
+			<input type="radio" name="okul" value="kız"> 
+			<label for="cinsiyet">Kız</label>
+             <br>
+             <input type="radio" name="okul" value="erkek"> 
+			<label for="adres">Erkek</label>
+		</p>
+		<p class="submit">
+			<input type="submit" value="Gönder" />
+		</p>
 	</fieldset>
+	</form>
 </body>
+</html>
