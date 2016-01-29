@@ -1,7 +1,7 @@
 <html>
 <head>
 	<meta charset="utf-8" />
-	<title>mesajFormu</title>
+	<title>sifreGonderFormu</title>
 	<style>
 		body {
 			padding: 50px 100px;
@@ -51,29 +51,21 @@
 </head>
 
 <body>
-	<h2>Mesaj Formu</h2>
-	
 	<form class="form">
 		<fieldset>
-<legend>Kişisel Bilgiler</legend>
+<legend>Şifre Gönderme</legend>
 
-		<p class="name">
-			<input type="text" name="name" id="name" />
-			<label for="name">İsim</label>
-		</p>
-		<p class="email">
-			<input type="text" name="email" id="email"  />
-			<label for="email">Email</label>
-		</p>
+		<label for="name">yeni sifre giriniz:</label>
+		<p class="sifre">
+			<input type="text" name="sifre" id="sifre" />
 			
-		<p class="text">
-			<textarea name="text" placeholder="Mesajınız" /></textarea>
+		</p>
+		<label for="name">yeni sifre tekrar giriniz:</label>
+		<p class="sifretekrar">
+			<input type="text" name="sifretekrar" id="sifretekrar" />
 		</p>
 		<p class="submit">
 			<input type="submit" value="Gönder" />
 		</p>
 	</fieldset>
-	</form>
-
 </body>
-</html>
